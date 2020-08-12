@@ -1,4 +1,4 @@
-## Wasted Class Time App
+## Wasted Class Time App'
 
 This file will be used to log any new goals or ideas, problems encountered, and things learned along the way. 
 
