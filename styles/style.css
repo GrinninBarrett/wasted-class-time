@@ -1,0 +1,140 @@
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    background: linear-gradient(180deg, #FF99FF, 60%, #99FF99);
+    font-size: 1rem;
+  }
+
+  #appName {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0.5rem auto auto auto;
+    padding: 25px;
+  }
+  
+  #purpose {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: auto auto 3rem auto;
+  }
+  
+  .text {
+    text-align: center;
+  }
+  
+  #classTime {
+    width: 15%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 1rem;
+    margin: 0 auto 2rem auto;
+    box-shadow: 2px 2px 5px;
+  }
+  
+  #classTime:hover {
+    transform: scale(1.01);
+  }
+  
+  #classTime:focus {
+    outline: none;
+    transform: scale(1.01);
+  }
+  
+  .input {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 15%;
+    padding: 25px 15px 25px 15px;
+    font-size: 1.3rem;
+    margin: auto 1rem 2rem 1rem;
+    border-radius: 8px;
+    outline: 0;
+    box-shadow: 2px 2px 4px;
+  }
+  
+  .controls:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  #elapsed {
+    font-size: 3rem;
+  }
+  
+  #start {
+    background-color: #FF7799;
+  }
+  
+  #pause {
+    background-color: #99CCFF;
+  }
+  
+  #reset {
+    background-color: #FFCC99;
+  }
+  
+  #calculate {
+    background-color: #CC99FF;
+  }
+  
+  #myModal {
+    background-color: 
+  }
+  
+  .modal {
+    text-align: center;
+    display: none;
+    position: fixed;
+    padding: 15px;
+    background-color: #FFDC9A;
+    max-width: 50%;
+    min-width: 35%;
+    max-height: 75%;
+    min-height: 35%;
+    left: 50%;
+    top: 50%;
+    overflow: 0;
+    border-radius: 8px;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal-content {
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+  }
+  
+  #classSeconds,
+  #timerSeconds,
+  #result {
+    display: none;
+  }
+  
+  #answer {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 0 50px 0;
+    color: #BC006F;
+  }
+  
+  .close {
+    float: right;
+    text-align: center;
+    color: #BC006F;
+    font-size: 2rem;
+    background-color: #c3c3c3;
+    width: 9%;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+    box-shadow: 1px 1px 1px #777;
+  }
