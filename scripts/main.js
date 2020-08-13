@@ -38,24 +38,9 @@ reset.onclick = function() {
     seconds = 0; minutes = 0;
 }
 
-// var calculate = document.getElementById("calculate");
-
-function getVars(){
-var result = document.getElementById("result").textContent;
-  document.getElementById("answer").innerHTML = result
-
-result.textContent = function calcResult(){
-  var n3 = parseInt(document.getElementById("classSeconds").value) = n1*60;
-  var n4 = parseInt(document.getElementById("timerSeconds").value) = (int(minutes)*60)+int(seconds);
-}
-  n4 / n3;
-}
-
-
-var n1 = document.getElementById("classTime").value;
-  /*var n2 = parseInt(document.getElementById("elapsed").value);*/
-
 let root = document.querySelector(".root");
+
+let modalRoot =document.getElementById("modal-root");
 
 let modal = document.querySelector(".modal");
 
@@ -63,27 +48,28 @@ let para = document.querySelector(".answer");
 
 let close = document.querySelector(".close");
 
-let totalClassTime = document.querySelector(".totalClassTime");
+let totalClassTime = Number(document.querySelector(".input"));
+
+let elapsedClassSeconds = Number((minutes * 60) + seconds);
+
+let wastedTime = ((elapsedClassSeconds / (totalClassTime * 60)) * 100);
+
 
 let calculate = function() {
   clearTimeout(t);
   modal.style.display = "block";
-  para.textContent = getPercentage();
-}
-
-let getPercentage = function() {
-  totalClassTime = parseInt(totalClassTime, 10);
-  let elapsedClassSeconds = parseInt((((minutes * 60) + seconds)), 10);
-  let wastedTime = parseInt(((elapsedClassSeconds / (totalClassTime * 60)) * 100), 10);
-  return wastedTime + "%";
+  modalRoot.style.display = "block";
+  para.textContent = wastedTime + "%";
 }
 
 close.onclick = function() {
   modal.style.display = "none";
+  modalRoot.style.display = "none";
 }
 
-root.onclick = function(event) {
-    if (event.target == modal) {
+modalRoot.onclick = function(event) {
+    if (event.target == modalRoot) {
       modal.style.display = "none";
+      modalRoot.style.display = "none";
     }
 }
