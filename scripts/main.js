@@ -21,8 +21,6 @@ function timer() {
     t = setTimeout(add, 1000);
 }
 
-
-
 /* Start button */
 start.onclick = timer;
 
@@ -37,6 +35,8 @@ reset.onclick = function() {
     theTimer.textContent = "00:00";
     seconds = 0; minutes = 0;
 }
+
+//Define lots of variables
 
 let root = document.querySelector(".root");
 
