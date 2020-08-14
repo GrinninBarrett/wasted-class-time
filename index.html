@@ -16,12 +16,24 @@
     <p id="purpose">How much time does your class waste by not listening?</p>
   </div>
   <div class="input">
-    <input id="classTime"
+    <!-- <input id="classTime"
            class="totalClassTime"
            type="textbox"
            placeholder="Enter total class time (mins)"
            required
-           />
+           /> -->
+    <label for="time" class="classTime">Total Class Time (min):</label>
+      <select id="time" class="selectBox">
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+        <option value="55">55</option>
+        <option value="60">60</option>
+      </select>
   </div>
   <div class="text">
     <h3 id="elapsed">00:00</h3>

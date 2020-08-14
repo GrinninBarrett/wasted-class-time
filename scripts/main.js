@@ -48,9 +48,17 @@ let para = document.querySelector(".answer");
 
 let close = document.querySelector(".close");
 
-let totalClassTime = Number(document.querySelector(".input"));
+let selectBox = document.querySelector("#time");
 
-let elapsedClassSeconds = Number((minutes * 60) + seconds);
+let selectedOption = document.querySelector("#time").selectedIndex;
+
+let totalClassTime = Number(selectBox.options[selectedOption].text);
+
+selectBox.addEventListener("change", (event) => {
+    totalClassTime = event.target.value;
+});
+
+let elapsedClassSeconds = (minutes * 60) + seconds;
 
 let wastedTime = ((elapsedClassSeconds / (totalClassTime * 60)) * 100);
 
