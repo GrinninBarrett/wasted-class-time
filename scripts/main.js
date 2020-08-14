@@ -58,16 +58,19 @@ selectBox.addEventListener("change", (event) => {
     totalClassTime = event.target.value;
 });
 
-let elapsedClassSeconds = (minutes * 60) + seconds;
+let elapsedClassSeconds = function() {
+    return (minutes * 60) + seconds;
+}
 
-let wastedTime = ((elapsedClassSeconds / (totalClassTime * 60)) * 100);
-
+let wastedTime = function() {
+    return Math.round((((elapsedClassSeconds() / (totalClassTime * 60)) * 100)) * 10) / 10;
+}
 
 let calculate = function() {
   clearTimeout(t);
   modal.style.display = "block";
   modalRoot.style.display = "block";
-  para.textContent = wastedTime + "%";
+  para.textContent = wastedTime() + "%";
 }
 
 close.onclick = function() {
