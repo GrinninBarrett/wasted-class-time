@@ -1,29 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
 body {
-    height: 100vh;
-    width: 100vw;
-    display: block;
-    background: linear-gradient(180deg, #FF99FF, 60%, #99FF99);
-    font-size: 1rem;
+    display: flex;
+    background: url(../images/chalkboard.jpg), #2D312E;
+    align-items: center;
+    justify-content: center;
   }
 
   #appName {
     text-align: center;
-    font-size: 2.5rem;
-    margin: 0.5rem auto auto auto;
+    font-size: 2.5em;
+    color: white;
     padding: 25px;
+    font-family: "Chilanka", cursive;
   }
   
   #purpose {
     text-align: center;
-    font-size: 1.5rem;
-    margin: auto auto 3rem auto;
+    font-size: 1.5em;
+    color: white;
+    margin: auto auto 3em auto;
+    font-family: "Chilanka", cursive;
   }
   
   .text {
     text-align: center;
+    color: white;
+  }
+
+  .classTime {
+    color: white;
+    font-family: "Chilanka", cursive;
   }
   
-  #classTime {
+  /* commented out just in case of return to textbox */
+  /* #classTime {
     width: 15%;
     text-align: center;
     border-radius: 8px;
@@ -40,20 +52,26 @@ body {
   #classTime:focus {
     outline: none;
     transform: scale(1.01);
-  }
+  } */
   
-  .input {
+  .input,
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     text-align: center;
+    font-size: 1em;
     margin-bottom: 20px;
   }
   
   .classTime {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     margin-right: 10px;
   }
 
   .selectBox {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     padding: 3px;
     border-radius: 4px;
   }
@@ -63,10 +81,10 @@ body {
   }
   
   .controls {
-    width: 15%;
+    width: 200px;
     padding: 25px 15px 25px 15px;
-    font-size: 1.3rem;
-    margin: auto 1rem 2rem 1rem;
+    font-size: 1.3em;
+    margin: auto 0.8em 1em 0.8em;
     border-radius: 8px;
     outline: 0;
     box-shadow: 2px 2px 4px;
@@ -75,6 +93,22 @@ body {
   .controls:hover {
     transform: scale(1.05);
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 925px) {
+    .input {
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    
+    .buttons {
+      flex-direction: column;
+    }
+
+    .controls {
+      font-size: 1.15em;
+      padding: 10px;
+    }
   }
   
   #elapsed {

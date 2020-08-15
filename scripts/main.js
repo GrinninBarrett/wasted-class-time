@@ -68,7 +68,7 @@ let wastedTime = function() {
 
 let calculate = function() {
   clearTimeout(t);
-  modal.style.display = "block";
+  modal.style.display = "flex";
   modalRoot.style.display = "block";
   para.textContent = wastedTime() + "%";
 }
