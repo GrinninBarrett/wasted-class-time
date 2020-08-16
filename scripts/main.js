@@ -68,19 +68,29 @@ let wastedTime = function() {
 
 let calculate = function() {
   clearTimeout(t);
-  modal.style.display = "flex";
+  modal.classList.add("modal-shown");
   modalRoot.style.display = "block";
   para.textContent = wastedTime() + "%";
+    if (wastedTime() > 10) {
+        para.classList.add("answer-worst");
+        modal.classList.add("modal-worst");
+    } else if (wastedTime() > 5) {
+        para.classList.add("answer-bad");
+        modal.classList.add("modal-bad");
+    } else {
+        para.classList.add("answer-good");
+        modal.classList.add("modal-good");
+    }
 }
 
 close.onclick = function() {
-  modal.style.display = "none";
+  modal.classList.remove("modal-shown");
   modalRoot.style.display = "none";
 }
 
 modalRoot.onclick = function(event) {
     if (event.target == modalRoot) {
-      modal.style.display = "none";
+      modal.classList.remove("modal-shown");
       modalRoot.style.display = "none";
     }
 }

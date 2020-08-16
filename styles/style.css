@@ -6,6 +6,7 @@ body {
     background: url(../images/chalkboard.jpg), #2D312E;
     align-items: center;
     justify-content: center;
+    margin: auto;
   }
 
   #appName {
@@ -109,6 +110,21 @@ body {
       font-size: 1.15em;
       padding: 10px;
     }
+
+    .selectBox {
+      font-size: 0.9em;
+    }
+
+  }
+
+  @media only screen and (max-width: 700px) {
+    .modal-text {
+      font-size: 0.7em;
+    }
+
+    .text {
+      margin: 10px;
+    }
   }
   
   #elapsed {
@@ -148,7 +164,7 @@ body {
     display: none;
     position: fixed;
     padding: 15px;
-    background-color: #FFDC9A;
+    background-color: #BFFFBF;
     max-width: 50%;
     min-width: 35%;
     max-height: 75%;
@@ -161,33 +177,54 @@ body {
     transform: translate(-50%, -50%);
     z-index: 6;
   }
+
+  .modal-shown {
+    display: grid;
+  }
+
+  .modal-good {
+    background-color: #BFFFBF;
+  }
+
+  .modal-bad {
+    background-color: #FFFFBF;
+  }
+
+  .modal-worst {
+    background-color: #FFBFBF;
+  }
   
   .modal-content {
+    font-family: "Chilanka", sans-serif;
     text-align: center;
     font-size: 2rem;
     padding: 15px;
   }
-  
-  #classSeconds,
-  #timerSeconds,
-  #result {
-    display: none;
-  }
-  
-  #answer {
+
+  .answer {
     text-align: center;
     font-size: 3rem;
     margin: 0 0 50px 0;
-    color: #BC006F;
+  }
+
+  .answer-good {
+    color: #006000;
+  }
+
+  .answer-bad {
+    color: #FD7F00;
+  }
+  
+  .answer-worst {
+    color: #BF0000;
   }
   
   .close {
     float: right;
-    text-align: center;
+    padding: 3px 10px 3px 10px;
     color: #BC006F;
     font-size: 2rem;
     background-color: #c3c3c3;
-    width: 9%;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -195,4 +232,8 @@ body {
   .close:hover {
     color: #000;
     box-shadow: 1px 1px 1px #777;
+  }
+
+  .close-button {
+    
   }
