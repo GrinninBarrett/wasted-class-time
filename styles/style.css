@@ -9,30 +9,26 @@ body {
     margin: auto;
   }
 
+
   #appName {
     text-align: center;
     font-size: 2.5em;
     color: white;
-    padding: 25px;
-    font-family: "Chilanka", cursive;
+    margin: 60px auto 40px auto;
+    font-family: "Chilanka", sans-serif;
   }
   
   #purpose {
     text-align: center;
     font-size: 1.5em;
     color: white;
-    margin: auto auto 3em auto;
-    font-family: "Chilanka", cursive;
-  }
-  
-  .text {
-    text-align: center;
-    color: white;
+    margin: auto auto 40px auto;
+    font-family: "Chilanka", sans-serif;
   }
 
   .classTime {
     color: white;
-    font-family: "Chilanka", cursive;
+    font-family: "Chilanka", sans-serif;
   }
   
   /* commented out just in case of return to textbox */
@@ -63,7 +59,7 @@ body {
     flex-direction: row;
     text-align: center;
     font-size: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   
   .classTime {
@@ -79,6 +75,18 @@ body {
 
   .selectBox:focus {
     outline: none;
+  }
+
+  .timer-text {
+    margin: 40px auto;
+  }
+
+  #elapsed {
+    width: 120px;
+    color: white;
+    font-family: "Chilanka", sans-serif;
+    text-align: center;
+    margin: 40px auto;
   }
   
   .controls {
@@ -97,10 +105,6 @@ body {
   }
 
   @media only screen and (max-width: 925px) {
-    .input {
-      flex-direction: column;
-      margin-bottom: 10px;
-    }
     
     .buttons {
       flex-direction: column;
@@ -108,11 +112,8 @@ body {
 
     .controls {
       font-size: 1.15em;
-      padding: 10px;
-    }
-
-    .selectBox {
-      font-size: 0.9em;
+      padding: 20px;
+      width: 180px;
     }
 
   }
@@ -124,6 +125,30 @@ body {
 
     .text {
       margin: 10px;
+    }
+
+    #appName {
+      font-size: 2em;
+      margin: 50px auto 30px auto;
+    }
+
+    #purpose {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    .input {
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    .selectBox {
+      font-size: 0.9em;
+    }
+
+    .controls {
+      padding: 15px;
+      width: 160px;
     }
   }
   
@@ -164,7 +189,6 @@ body {
     display: none;
     position: fixed;
     padding: 15px;
-    background-color: #BFFFBF;
     max-width: 50%;
     min-width: 35%;
     max-height: 75%;
@@ -221,10 +245,11 @@ body {
   
   .close {
     float: right;
+    height: 45px;
+    width: 45px;
     padding: 3px 10px 3px 10px;
-    color: #BC006F;
+    background-color: lightgrey;
     font-size: 2rem;
-    background-color: #c3c3c3;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -234,6 +259,14 @@ body {
     box-shadow: 1px 1px 1px #777;
   }
 
-  .close-button {
-    
+  .close-good {
+    color: #006000;
+  }
+
+  .close-bad {
+    color: #FD7F00;
+  }
+
+  .close-worst {
+    color: #BF0000;
   }
