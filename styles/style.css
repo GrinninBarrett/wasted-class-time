@@ -242,8 +242,8 @@ body {
     }
 
     .close {
-      height: 30px;
-      width: 30px;
+      height: 1.4em;
+      width: 1.4em;
       font-size: 1.4em;
     }
 
@@ -253,7 +253,7 @@ body {
 
     #appName {
       font-size: 2em;
-      margin: 50px auto 30px auto;
+      margin: 30px auto 30px auto;
     }
 
     #purpose {
