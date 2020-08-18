@@ -123,6 +123,11 @@ body {
       font-size: 0.7em;
     }
 
+    .close {
+      height: 30px;
+      width: 30px;
+    }
+
     .text {
       margin: 10px;
     }
