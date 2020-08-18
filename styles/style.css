@@ -194,9 +194,17 @@ body {
   .answer-worst {
     color: #BF0000;
   }
+
+  .close-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
   
   .close {
     float: right;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     width: 40px;
     background-color: lightgrey;
@@ -272,5 +280,13 @@ body {
     .controls {
       padding: 15px;
       width: 160px;
+    }
+  }
+
+  @media only screen and (max-device-width: 480px) {
+    .close {
+      height: 25px;
+      width: 25px;
+      font-size: 1.4em;
     }
   }
