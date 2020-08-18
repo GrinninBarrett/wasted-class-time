@@ -103,58 +103,6 @@ body {
     transform: scale(1.05);
     cursor: pointer;
   }
-
-  @media only screen and (max-width: 925px) {
-    
-    .buttons {
-      flex-direction: column;
-    }
-
-    .controls {
-      font-size: 1.15em;
-      padding: 20px;
-      width: 180px;
-    }
-
-  }
-
-  @media only screen and (max-width: 700px) {
-    .modal-text {
-      font-size: 0.7em;
-    }
-
-    .close {
-      height: 30px;
-      width: 30px;
-    }
-
-    .text {
-      margin: 10px;
-    }
-
-    #appName {
-      font-size: 2em;
-      margin: 50px auto 30px auto;
-    }
-
-    #purpose {
-      font-size: 1.2em;
-      margin-bottom: 40px;
-    }
-
-    .input {
-      margin-bottom: 10px;
-    }
-
-    .selectBox {
-      font-size: 0.9em;
-    }
-
-    .controls {
-      padding: 15px;
-      width: 160px;
-    }
-  }
   
   #elapsed {
     font-size: 3rem;
@@ -249,11 +197,10 @@ body {
   
   .close {
     float: right;
-    height: 45px;
-    width: 45px;
-    padding: 3px 10px 3px 10px;
+    height: 40px;
+    width: 40px;
     background-color: lightgrey;
-    font-size: 2rem;
+    font-size: 1.9rem;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -273,4 +220,57 @@ body {
 
   .close-worst {
     color: #BF0000;
+  }
+
+  @media only screen and (max-width: 925px) {
+    
+    .buttons {
+      flex-direction: column;
+    }
+
+    .controls {
+      font-size: 1.15em;
+      padding: 20px;
+      width: 180px;
+    }
+
+  }
+
+  @media only screen and (max-width: 700px) {
+    .modal-text {
+      font-size: 0.7em;
+    }
+
+    .close {
+      height: 30px;
+      width: 30px;
+      font-size: 1.4em;
+    }
+
+    .text {
+      margin: 10px;
+    }
+
+    #appName {
+      font-size: 2em;
+      margin: 50px auto 30px auto;
+    }
+
+    #purpose {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    .input {
+      margin-bottom: 10px;
+    }
+
+    .selectBox {
+      font-size: 0.9em;
+    }
+
+    .controls {
+      padding: 15px;
+      width: 160px;
+    }
   }
