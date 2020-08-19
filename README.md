@@ -12,3 +12,4 @@ I hope this app can become something useful for teachers. I would personally lov
 - It might be a good addition to have a button saying "How to use this tool" or something, that when clicked brings up a modal explaining how it works in case it's not obvious to someone.
 - Long-term goal: add ability for user to add and customize classes and track the stats for each specific class, filterable by date and so on. Being able to see trends over time, including graphs, could be a useful addition.
 - Somehow preserve the user's selection for class time so they don't have to re-select their class's length every time.
+- Give user option to also show the percentage calculation in real time.
