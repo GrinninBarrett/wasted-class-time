@@ -5,6 +5,8 @@ var theTimer = document.getElementsByTagName('h3')[0],
     seconds = 0, minutes = 0,
     t;
 
+let timerOn = false;
+
 function add() {
     seconds++;
     if (seconds >= 60) {
@@ -22,11 +24,17 @@ function timer() {
 }
 
 /* Start button */
-start.onclick = timer;
+start.onclick = function() {
+  if (!timerOn) {
+    timer();
+    timerOn = true;
+  }
+}
 
 /* Stop button */
 pause.onclick = function() {
     clearTimeout(t);
+    timerOn = false;
 }
 
 /* Reset button */
@@ -34,6 +42,7 @@ reset.onclick = function() {
     clearTimeout(t);
     theTimer.textContent = "00:00";
     seconds = 0; minutes = 0;
+    timerOn = false;
 }
 
 //Declare lots of variables
