@@ -79,6 +79,7 @@ let wastedTime = function() {
 
 let calculate = function() {
   clearTimeout(t);
+  timerOn = false;
   modal.classList.add("modal-shown");
   modalRoot.style.display = "block";
   if (wastedTime() >= 10) {
